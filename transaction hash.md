@@ -45,7 +45,7 @@ curl -X GET "http://lcd.hupay.io/txs?message.action=send&message.sender={address
 ```
 
 #### Get Recipient Transaction list
-- url
+- URL
 ```
 url: /txs
 method: GET
@@ -60,8 +60,9 @@ Maximum limit: 100
 
 Request URL
 http://lcd.hupay.io/txs?message.action=send&transfer.recipient={address}&page={page}&limit={limit}
-
-Curl
+```
+- Curl
+```
 curl -X GET "http://lcd.hupay.io/txs?message.action=send&transfer.recipient={address}&page={page}&limit={limit}" -H "accept: application/json"
 ```
 - cosmosjs
