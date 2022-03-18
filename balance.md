@@ -7,11 +7,12 @@ base: hpx
 
 #### Using Get Balance
 - url
+```
 url: /bank/balances/{address}
 method: GET
 query
   address: address in bech32 format
-
+```
 - cosmosjs
 ```
 Refer to cosmosjs.md

@@ -1,7 +1,8 @@
 # Transactions
 
 #### Get Transaction Details
-- url
+- URL
+```
 const path = "/txs/{hash}
 
 url: /txs/{hash}
@@ -11,10 +12,11 @@ query
 
 Request URL
 http://lcd.hupay.io/txs/${hash}
-
-Curl
+```
+- Curl
+```
 curl -X GET "http://lcd.hupay.io/txs/{hash}" -H "accept: application/json"
-
+```
 - cosmosjs
 ```
 Refer to cosmosjs.md
@@ -23,6 +25,7 @@ cosmos.checkTxs(tx_id);
 ```
 
 #### Get Send Transaction list
+```
 url: /txs
 method: GET
 query
@@ -39,10 +42,11 @@ http://lcd.hupay.io/txs?message.action=send&message.sender={address}=1&limit=100
 
 Curl
 curl -X GET "http://lcd.hupay.io/txs?message.action=send&message.sender={address}&page=1&limit=100" -H "accept: application/json"
-
+```
 
 #### Get Recipient Transaction list
 - url
+```
 url: /txs
 method: GET
 query
@@ -59,7 +63,7 @@ http://lcd.hupay.io/txs?message.action=send&transfer.recipient={address}&page={p
 
 Curl
 curl -X GET "http://lcd.hupay.io/txs?message.action=send&transfer.recipient={address}&page={page}&limit={limit}" -H "accept: application/json"
-
+```
 - cosmosjs
 ```
 Refer to cosmosjs.md
